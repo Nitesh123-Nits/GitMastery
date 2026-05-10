@@ -13,5 +13,12 @@ function getDate() {
     return new Date().toLocaleDateString();
 }
 
+function login(username, password) {
+    if (username === "admin" && password === "password") {
+        return "Login successful!";
+    }
+    return "Invalid credentials.";
+}
+
 // Export functions
-module.exports = { greetUser, calculateTotal, getDate };
+module.exports = { greetUser, calculateTotal, getDate, login };
